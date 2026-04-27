@@ -21,7 +21,7 @@ function shorten() {
   .then(data => {
     // 🔥 CAMBIO CLAVE
     const shortId = data.shortUrl.split("/").pop();
-    const newUrl = `https://knil.vercel.app/${shortId}`;
+    const newUrl = `https://knil.vercel.app/api/${shortId}`;
 
     document.getElementById("result").innerText = newUrl;
   });
